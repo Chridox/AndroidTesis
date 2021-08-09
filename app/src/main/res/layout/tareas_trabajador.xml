@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondo"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Tareas a realizar"
+                android:textAlignment="center"
+
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"></TextView>
+
+
+                <ListView
+                    android:id="@+id/listaTareasTrabajador"
+                    android:layout_width="match_parent"
+                    android:layout_height="484dp"
+                    android:layout_marginTop="100px"
+                    android:background="#FFFFFF"
+                    android:cacheColorHint="#FFFFFF"></ListView>
+
+            <Button
+                android:id="@+id/volverListaMedidor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="75px"
+                android:drawableLeft="@drawable/cancelar"
+                android:text="Volver"
+                android:textSize="15sp"
+                android:textStyle="bold">
+
+            </Button>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Formulario"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/idMedidorFormulario"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#FFFFFF"
+                android:enabled="false"
+                android:hint=""
+                android:textColorLink="#FFFFFF"></EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginTop="50px"
+                android:text="Trabajo realizado"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/trabajoRealizado"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:background="#FFFFFF"
+                android:hint="Trabajo a realizar"
+                android:enabled="false"
+                android:entries="@array/trabajos"></EditText>
+
+            <EditText
+                android:id="@+id/resultadoQR"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="50px"
+                android:background="#FFFFFF"
+                android:hint="Resultado QR"></EditText>
+
+            <EditText
+                android:id="@+id/observacionesTrabajador"
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                android:layout_marginTop="50px"
+                android:background="#FFFFFF"
+                android:hint="Observaciones"></EditText>
+
+
+            <Button
+                android:id="@+id/btnQR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75px"
+                android:drawableLeft="@drawable/arcamera"
+                android:text="Capturar codigo QR"
+                android:textSize="15sp"
+                android:textStyle="bold">
+
+            </Button>
+
+            <Button
+                android:id="@+id/guardarTrabajo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="100px"
+                android:drawableLeft="@drawable/salvar"
+                android:text="Guardar"
+                android:textSize="15sp"
+                android:textStyle="bold"></Button>
+
+            <Button
+                android:id="@+id/volverTrabajo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="100px"
+                android:drawableLeft="@drawable/cancelar"
+                android:text="Volver"
+                android:textSize="15sp"
+                android:textStyle="bold">
+
+            </Button>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

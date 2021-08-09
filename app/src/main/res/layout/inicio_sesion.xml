@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:divider="@drawable/fondo"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo"
+
+        android:orientation="vertical">
+
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100px"
+        android:background="@drawable/logoaguacoop"
+
+        android:foregroundGravity="center"
+        tools:srcCompat="@drawable/logoaguacoop"></ImageView>
+
+        <EditText
+            android:id="@+id/txtusu"
+            android:layout_width="332dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="300px"
+
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/persona"
+            android:hint="Usuario"
+            android:inputType="text"></EditText>
+
+        <EditText
+            android:id="@+id/txtpas"
+            android:layout_width="332dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100px"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/iniciarsesion1"
+            android:hint="Contraseña"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnentrar"
+            android:layout_width="376dp"
+            android:layout_height="64dp"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="150px"
+            android:drawableLeft="@drawable/entrar"
+            android:fontFamily="sans-serif-black"
+            android:text="Entrar"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
